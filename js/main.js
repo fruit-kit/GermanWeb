@@ -1,4 +1,4 @@
-function checkAnswers(formId) {
+const checkAnswers = (formId) => {
 
     const form = document.getElementById(formId);
     const questions = form.querySelectorAll('.question');
