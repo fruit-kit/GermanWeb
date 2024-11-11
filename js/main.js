@@ -11,7 +11,7 @@ const checkAnswers = (formId) => {
         result.classList.add('d-none')
         return;
     }
-    
+
     warningAlert.classList.add('d-none');
     result.classList.remove('d-none');
 
@@ -24,7 +24,8 @@ const checkAnswers = (formId) => {
     });
 
     const resultElement = document.getElementById('result');
-    resultElement.textContent = `Правильных ответов: ${rightAnswers} из ${selectedAnswers.length}`;
+    const rightAnswersInPercent = (rightAnswers / questions.length) * 100; 
+    resultElement.textContent = `Правильных ответов: ${rightAnswersInPercent.toFixed(0)}%`;
 
     form.reset();
 
