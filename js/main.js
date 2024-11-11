@@ -10,10 +10,10 @@ const checkAnswers = (formId) => {
         warningAlert.classList.remove('d-none');
         result.classList.add('d-none')
         return;
-    } else {
-        warningAlert.classList.add('d-none');
-        result.classList.remove('d-none')
     }
+    
+    warningAlert.classList.add('d-none');
+    result.classList.remove('d-none');
 
     let rightAnswers = 0;
 
