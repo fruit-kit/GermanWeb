@@ -48,3 +48,10 @@ footer a:hover {
 	
 }
 
+.fixed-height {
+
+	height: 170px;
+	overflow: hidden;
+	
+  }
+
